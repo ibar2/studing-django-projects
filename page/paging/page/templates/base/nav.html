@@ -1,0 +1,40 @@
+
+ {% block content %}
+ <nav class="navbar navbar-dark bg-dark  navbar-expand-sm fixed-top">
+    <a href= {% url 'home' %} class="navbar-brand mb-0 h1 ms-5 active">E-Passwd</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id='navbarNav'>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link ">Passwd Generator</a>
+        </li>
+        <li class="nav-item ">
+          <a href="#" class="nav-link ">Passwd StrongChecker</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto me-5">
+        <li class="nav-item active">
+          <a href="{% url 'login' %}" class="nav-link" style="transition: background-color 0.3s ease-out;"
+            :hover {
+              background-color: #343a40;
+              color: #fff;
+            }
+          >Login</a>
+        </li>
+        <li class="nav-item active">
+          <a href= {% url 'signup' %} class="nav-link" style="transition: background-color 0.3s ease-out;"
+            :hover {
+              background-color: #343a40;
+              color: #fff;
+            }
+          >SignUp</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    
+ {% endblock content %}
