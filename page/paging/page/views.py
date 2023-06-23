@@ -11,3 +11,7 @@ def loginpage(req):
 
 def signup(req):
     return render(req, 'page/signup.html')
+
+
+def generator(req):
+    return render(req, 'page/generator.html')
