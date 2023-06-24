@@ -3,5 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    path('snipet/', views.home, name='snipet')
+    path('snipet', views.all.as_view(), name='snipet'),
+    path('snipet/<int:pk>', views.detail.as_view(), name='detail')
 ]
