@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    {% if request.user.is_authenticated %}
+        <h1>Welcome back, {{ request.user.username }}!</h1>
+        <!-- Display personalized content for the user here -->
+        <a href="{% url 'logout' %}">Logout</a>
+    {% else %}
+        <h1>Welcome to our site!</h1>
+        <!-- Display content for non-logged in users here -->
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'signup' %}">Sign up</a>
+    {% endif %}
+</body>
+</html>
