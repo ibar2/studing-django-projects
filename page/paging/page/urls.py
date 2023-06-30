@@ -7,5 +7,7 @@ urlpatterns = [
     path('login/', views.loginpage, name='login'),
     path('signup/', views.signup, name='signup'),
     path('generator/', views.generator, name='generator'),
-    path('generate/', views.passwd, name='generate')
+    path('generate/', views.passwd, name='generate'),
+    path('strength-checker/', views.strengthchecker, name='checker'),
+    path('checking/', views.cheking, name='checking')
 ]
