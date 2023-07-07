@@ -1,0 +1,6 @@
+FROM python:latest
+WORKDIR /app
+COPY . .
+RUN pip install gunicorn python-dotenv django psycopg2
+EXPOSE 8000
+

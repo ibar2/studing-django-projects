@@ -1,0 +1,14 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2597
+"GET / HTTP/1.1" 200 2597
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3307
+"GET /favicon.ico HTTP/1.1" 404 3307
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\paging\settings\base.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\paging\settings\base.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\paging\settings\base.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\paging\settings\base.py changed, reloading.

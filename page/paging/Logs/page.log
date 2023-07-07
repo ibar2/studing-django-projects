@@ -1,0 +1,26 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2597
+"GET / HTTP/1.1" 200 2597
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\paging\settings\base.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\paging\settings\base.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2597
+"GET / HTTP/1.1" 200 2597
+"GET /generator/ HTTP/1.1" 200 4602
+"GET /generator/ HTTP/1.1" 200 4602
+"GET /generate/ HTTP/1.1" 200 28
+"GET /generate/ HTTP/1.1" 200 28
+"GET /generate/ HTTP/1.1" 200 28
+"GET /generate/ HTTP/1.1" 200 28
+"GET /generate/ HTTP/1.1" 200 28
+"GET /generate/ HTTP/1.1" 200 28
+"GET /generate/ HTTP/1.1" 200 28
+"GET /generate/ HTTP/1.1" 200 28
+"GET /generate/ HTTP/1.1" 200 28
+"GET /generate/ HTTP/1.1" 200 28
+"GET /generate/ HTTP/1.1" 200 28
+"GET /generate/ HTTP/1.1" 200 28
+"GET /generate/ HTTP/1.1" 200 28
+"GET /generate/ HTTP/1.1" 200 28
