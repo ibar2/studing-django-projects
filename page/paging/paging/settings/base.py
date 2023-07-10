@@ -77,21 +77,26 @@ WSGI_APPLICATION = "paging.wsgi.application"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": 'prod',
-        'USER': 'iba',
-        'PASSWORD': 'Zaki',
-        'PORT': 5432,
-        'HOST': '172.20.0.2',
+    'default': {'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': BASE_DIR / 'db.sqlite3'},
+
+    "db1": {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db1.db.sqlite3'
+    },
+
+    'db2': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db2.db.sqlite3'
     }
 }
 
 
-# Password validation
+# database routers
+DATABASE_ROUTERS = ['routers.route.auth', 'routers.route.routemodel']
 
-LOGIN_URL = 'tij'
-ADMIN_URL = "ti/"
+
+# Password validation
 
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
