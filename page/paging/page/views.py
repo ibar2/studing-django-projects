@@ -13,7 +13,11 @@ def homepage(req):
 
 def loginpage(req):
     if req.method == 'POST':
-        user = get_object_or_404(models.User, username=req.POST['username'])
+        print(models.User.objects.all())
+        print()
+        print(models.dat.objects.all())
+        # user = get_object_or_404(models.User, username=req.POST['username'])
+        user = get_object_or_404(models.dat, data=req.POST['username'])
         if user is not None:
             return HttpResponse('user found')
 
@@ -26,12 +30,15 @@ def signup(req):
         username = req.POST['username']
         email = unquote(req.POST['email'])
         password = req.POST['password']
-        sing = SignUpForm(req.POST)
-        if sing.is_valid():
-            user = models.User.objects.create_user(username=username,
-                                                   email=email,
-                                                   password=password)
-            user.save()
+        # sing = SignUpForm(req.POST)
+        # if sing.is_valid():
+        #     user = models.User.objects.create_user(username=username,
+        #                                            email=email,
+        #                                            password=password)
+        mod = models.dat()
+        mod.data = str(password)
+        mod.save()
+
     return render(req, 'page/signup.html')
 
 
@@ -70,4 +77,3 @@ def cheking(request):
         return JsonResponse(response_data)
 
     return render(request, 'password_check.html')
-
