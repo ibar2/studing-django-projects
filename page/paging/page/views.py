@@ -1,10 +1,10 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import JsonResponse
+from django.http import JsonResponse, Http404
 import secrets
+from django.contrib.auth import authenticate, login, logout
 from . import models
 from .forms import SignUpForm
 from urllib.parse import unquote
-from django.http import HttpResponse
 
 
 def homepage(req):
@@ -13,15 +13,13 @@ def homepage(req):
 
 def loginpage(req):
     if req.method == 'POST':
-        print(models.User.objects.all())
-        print()
-        print(models.dat.objects.all())
-        # user = get_object_or_404(models.User, username=req.POST['username'])
-        user = get_object_or_404(models.dat, data=req.POST['username'])
+        user = authenticate(username=req.POST['username'], password=req.POST['password'])
         if user is not None:
-            return HttpResponse('user found')
+            login(req, user)
+            return render(req, 'page/home.html', {'user': user})
+        else:
+            raise Http404('user not found')
 
-        return HttpResponse('user not found')
     return render(req, 'page/Login.html')
 
 
@@ -30,14 +28,15 @@ def signup(req):
         username = req.POST['username']
         email = unquote(req.POST['email'])
         password = req.POST['password']
-        # sing = SignUpForm(req.POST)
-        # if sing.is_valid():
-        #     user = models.User.objects.create_user(username=username,
-        #                                            email=email,
-        #                                            password=password)
-        mod = models.dat()
-        mod.data = str(password)
-        mod.save()
+        if password == req.POST['password2']:
+            sing = SignUpForm(req.POST)
+            if sing.is_valid():
+                user = models.User.objects.create_user(username=username,
+                                                       email=email,
+                                                       password=password)
+                user.save()
+        else:
+            raise render(req, 'page/signup.html')
 
     return render(req, 'page/signup.html')
 

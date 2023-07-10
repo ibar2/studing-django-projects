@@ -10644,3 +10644,213 @@ Not Found: /login/
 Not Found: /login/
 "POST /login/ HTTP/1.1" 404 2578
 "POST /login/ HTTP/1.1" 404 2578
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2597
+"GET / HTTP/1.1" 200 2597
+"GET /admin/ HTTP/1.1" 200 4596
+"GET /admin/ HTTP/1.1" 200 4596
+"POST /admin/logout/ HTTP/1.1" 200 1549
+"POST /admin/logout/ HTTP/1.1" 200 1549
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2218
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2218
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "C:\Users\Zakarie\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Zakarie\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py", line 38, in signup
+    return render(req, 'page/signup.html', {'user': user})
+                                                    ^^^^
+UnboundLocalError: cannot access local variable 'user' where it is not associated with a value
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "C:\Users\Zakarie\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Zakarie\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py", line 38, in signup
+    return render(req, 'page/signup.html', {'user': user})
+                                                    ^^^^
+UnboundLocalError: cannot access local variable 'user' where it is not associated with a value
+"GET /signup/ HTTP/1.1" 500 66015
+"GET /signup/ HTTP/1.1" 500 66015
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /signup/ HTTP/1.1" 200 5336
+"GET /signup/ HTTP/1.1" 200 5336
+"GET /signup/ HTTP/1.1" 200 5336
+"GET /signup/ HTTP/1.1" 200 5336
+"POST /signup/ HTTP/1.1" 200 5336
+"POST /signup/ HTTP/1.1" 200 5336
+"GET /login/ HTTP/1.1" 200 4270
+"GET /login/ HTTP/1.1" 200 4270
+"POST /login/ HTTP/1.1" 200 4270
+"POST /login/ HTTP/1.1" 200 4270
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /login/
+Not Found: /login/
+"POST /login/ HTTP/1.1" 404 2512
+"POST /login/ HTTP/1.1" 404 2512
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /login/
+Not Found: /login/
+"POST /login/ HTTP/1.1" 404 2561
+"POST /login/ HTTP/1.1" 404 2561
+Not Found: /login/
+Not Found: /login/
+"POST /login/ HTTP/1.1" 404 2579
+"POST /login/ HTTP/1.1" 404 2579
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /login/
+Not Found: /login/
+"POST /login/ HTTP/1.1" 404 2561
+"POST /login/ HTTP/1.1" 404 2561
+"GET /login/ HTTP/1.1" 200 4270
+"GET /login/ HTTP/1.1" 200 4270
+"GET /signup/ HTTP/1.1" 200 5336
+"GET /signup/ HTTP/1.1" 200 5336
+"POST /signup/ HTTP/1.1" 200 5336
+"POST /signup/ HTTP/1.1" 200 5336
+"GET /login/ HTTP/1.1" 200 4270
+"GET /login/ HTTP/1.1" 200 4270
+"POST /login/ HTTP/1.1" 200 2597
+"POST /login/ HTTP/1.1" 200 2597
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /signup/ HTTP/1.1" 200 5352
+"GET /signup/ HTTP/1.1" 200 5352
+"GET / HTTP/1.1" 200 2613
+"GET / HTTP/1.1" 200 2613
+"GET /login/ HTTP/1.1" 200 4286
+"GET /login/ HTTP/1.1" 200 4286
+Not Found: /login/
+Not Found: /login/
+"POST /login/ HTTP/1.1" 404 2561
+"POST /login/ HTTP/1.1" 404 2561
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\paging\settings\base.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\paging\settings\base.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\models.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\models.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /login/ HTTP/1.1" 200 2038
+"POST /login/ HTTP/1.1" 200 2038
+Forbidden (CSRF token from POST incorrect.): /login/
+Forbidden (CSRF token from POST incorrect.): /login/
+"POST /login/ HTTP/1.1" 403 2518
+"POST /login/ HTTP/1.1" 403 2518
+"GET / HTTP/1.1" 200 2068
+"GET / HTTP/1.1" 200 2068
+"GET / HTTP/1.1" 200 2068
+"GET / HTTP/1.1" 200 2068
+"GET / HTTP/1.1" 200 2068
+"GET / HTTP/1.1" 200 2068
+"GET / HTTP/1.1" 200 2071
+"GET / HTTP/1.1" 200 2071
+"GET / HTTP/1.1" 200 2083
+"GET / HTTP/1.1" 200 2083
+"GET /signup/ HTTP/1.1" 200 4822
+"GET /signup/ HTTP/1.1" 200 4822
+"GET /login HTTP/1.1" 301 0
+"GET /login HTTP/1.1" 301 0
+"GET /login/ HTTP/1.1" 200 3756
+"GET /login/ HTTP/1.1" 200 3756
+Not Found: /login/
+Not Found: /login/
+"POST /login/ HTTP/1.1" 404 2561
+"POST /login/ HTTP/1.1" 404 2561
+"GET /signup HTTP/1.1" 301 0
+"GET /signup HTTP/1.1" 301 0
+"GET /signup/ HTTP/1.1" 200 4822
+"GET /signup/ HTTP/1.1" 200 4822
+"POST /signup/ HTTP/1.1" 200 4822
+"POST /signup/ HTTP/1.1" 200 4822
+"GET /login/ HTTP/1.1" 200 3756
+"GET /login/ HTTP/1.1" 200 3756
+"POST /login/ HTTP/1.1" 200 2082
+"POST /login/ HTTP/1.1" 200 2082
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Forbidden (CSRF token from POST incorrect.): /login/
+Forbidden (CSRF token from POST incorrect.): /login/
+"POST /login/ HTTP/1.1" 403 2518
+"POST /login/ HTTP/1.1" 403 2518
+"GET /login/ HTTP/1.1" 200 3755
+"GET /login/ HTTP/1.1" 200 3755
+"GET / HTTP/1.1" 200 2082
+"GET / HTTP/1.1" 200 2082
+"GET /login/ HTTP/1.1" 200 3755
+"GET /login/ HTTP/1.1" 200 3755
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Zakarie\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Zakarie\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py", line 17, in loginpage
+    user.set_expiry(60)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'set_expiry'
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\Zakarie\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Zakarie\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py", line 17, in loginpage
+    user.set_expiry(60)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'set_expiry'
+"POST /login/ HTTP/1.1" 500 67209
+"POST /login/ HTTP/1.1" 500 67209
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
