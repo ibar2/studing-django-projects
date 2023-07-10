@@ -13,9 +13,6 @@ def homepage(req):
 
 def loginpage(req):
     if req.method == 'POST':
-        print(models.User.objects.all())
-        print()
-        print(models.dat.objects.all())
         # user = get_object_or_404(models.User, username=req.POST['username'])
         user = get_object_or_404(models.dat, data=req.POST['username'])
         if user is not None:
@@ -30,16 +27,14 @@ def signup(req):
         username = req.POST['username']
         email = unquote(req.POST['email'])
         password = req.POST['password']
-        # sing = SignUpForm(req.POST)
-        # if sing.is_valid():
-        #     user = models.User.objects.create_user(username=username,
-        #                                            email=email,
-        #                                            password=password)
-        mod = models.dat()
-        mod.data = str(password)
-        mod.save()
+        sing = SignUpForm(req.POST)
+        if sing.is_valid():
+            user = models.User.objects.create_user(username=username,
+                                                   email=email,
+                                                   password=password)
+            user.save()
 
-    return render(req, 'page/signup.html')
+    return render(req, 'page/signup.html', {'user': user})
 
 
 def generator(req):
