@@ -16,6 +16,11 @@
           <a href={% url 'checker' %} class="nav-link ">Passwd StrongChecker</a>
         </li>
       </ul>
+
+
+      {% if request.user.is_authenticated %}
+          <h1 class = ' ms-auto me-5' style='color:white;'> {{request.user.username}} </h1>
+      {% else %}
       <ul class="navbar-nav ms-auto me-5">
         <li class="nav-item active">
           <a href="{% url 'login' %}" class="nav-link" style="transition: background-color 0.3s ease-out;"
@@ -34,6 +39,7 @@
           >SignUp</a>
         </li>
       </ul>
+      {% endif %}
     </div>
   </nav>
     
