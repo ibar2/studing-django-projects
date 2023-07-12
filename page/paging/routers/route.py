@@ -4,7 +4,7 @@ class auth:
     auth and contenttypes applications.
     """
 
-    route_app_labels = {"auth", "sessions", "admin"}
+    route_app_labels = {"auth", "sessions", "admin", "contenttypes"}
 
     def db_for_read(self, model, **hints):
         """
