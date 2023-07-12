@@ -55,7 +55,6 @@ class routemodel:
         """
         Attempts to read blue and red models go to their respective databases.
         """
-        print('db for read')
         if model._meta.model_name in self.route_models:
             if model._meta.model_name == "user":
                 return 'db1'
