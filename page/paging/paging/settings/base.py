@@ -132,7 +132,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-SESSION_COOKIE_AGE = 60
+SESSION_COOKIE_AGE = 5 * 60
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
