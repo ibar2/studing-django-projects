@@ -117,6 +117,10 @@ AUTH_PASSWORD_VALIDATORS = [
 
 AUTH_USER_MODEL = 'page.User'
 
+# AUTHENTICATION_BACKENDS = [
+#     'paging.backends.CustomModelBackend',
+#     # Add other authentication backends if needed
+# ]
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
@@ -128,7 +132,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-
+SESSION_COOKIE_AGE = 60
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 

@@ -4,7 +4,7 @@ class auth:
     auth and contenttypes applications.
     """
 
-    route_app_labels = {"auth", "sessions", "admin"}
+    route_app_labels = {"auth", "sessions", "admin", "contenttypes"}
 
     def db_for_read(self, model, **hints):
         """
@@ -55,6 +55,7 @@ class routemodel:
         """
         Attempts to read blue and red models go to their respective databases.
         """
+        print('db for read')
         if model._meta.model_name in self.route_models:
             if model._meta.model_name == "user":
                 return 'db1'
