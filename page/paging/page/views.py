@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import JsonResponse, Http404
 import secrets
 from django.contrib.auth import authenticate, login, logout
@@ -11,12 +11,21 @@ def homepage(req):
     return render(req, 'page/home.html')
 
 
+def logoutUser(request):
+    """
+    Log the user out of the application.
+    """
+    logout(request)
+    return redirect('/')
+
+
 def loginpage(req):
     if req.method == 'POST':
-        user = authenticate(username=req.POST['username'], password=req.POST['password'])
+        user = authenticate(
+            username=req.POST['username'], password=req.POST['password'])
         if user is not None:
             login(req, user)
-            return render(req, 'page/home.html', {'user': user})
+            return redirect('/dash')
         else:
             raise Http404('user not found')
 
@@ -35,6 +44,10 @@ def signup(req):
                                                        email=email,
                                                        password=password)
                 user.save()
+
+                login(req, user)
+
+                return redirect('/')
         else:
             raise render(req, 'page/signup.html')
 
@@ -76,3 +89,7 @@ def cheking(request):
         return JsonResponse(response_data)
 
     return render(request, 'password_check.html')
+
+
+def dashboard(req):
+    return render(req, 'page/dash.html')

@@ -1,0 +1,73 @@
+{% extends 'base/base.html' %}
+{% block content %}
+<style>
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  .input {
+  
+  margin-bottom : 20px;
+  margin-left : 30px;
+  
+  }
+  .btn{
+    border : 1px solid black; 
+  }
+  .btn:hover {
+    background-color: #75C2F6;
+  }
+  body {
+    display : flex;
+    justify-content: center;
+    align-items:center;
+  }
+  .contain {
+    margin-top:120px;
+    width : 700px ;
+  }
+  table td + td { border-left:2px solid red; }
+  </style>
+  </head>
+  <body>
+  <div class='contain'>
+  <button type='button' class='btn'>Add a password</button>
+  <input type='search' placeholder='search' name='search' class='input'>
+  
+  <div style="overflow-x:auto;">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Password</th>
+      
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+  
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+  
+      </tr>
+      <tr>
+        <td>Adam</td>
+        <td>Johnson</td>
+  
+      </tr>
+    </table>
+  </div>
+  </div>
+
+{% endblock content %}
