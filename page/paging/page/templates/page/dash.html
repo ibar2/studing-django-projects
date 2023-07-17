@@ -19,6 +19,7 @@
   
   margin-bottom : 20px;
   margin-left : 30px;
+  outline:none;
   
   }
   .btn{
@@ -42,7 +43,7 @@
   <body>
   <div class='contain'>
   <button type='button' class='btn'>Add a password</button>
-  <input type='search' placeholder='search' name='search' class='input'>
+  <input type='search' placeholder='search'  class='input'>
   
   <div style="overflow-x:auto;">
     <table>
@@ -70,4 +71,11 @@
   </div>
   </div>
 
+  <script>
+    function disableSearchSuggestions() {
+      var input = document.getElementsByClassName("input");
+      input.setAttribute("autocomplete", "off");
+    }
+    window.onload = disableSearchSuggestions;
+    </script>
 {% endblock content %}
