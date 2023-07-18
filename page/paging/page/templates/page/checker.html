@@ -56,7 +56,7 @@
             <div class="input-group-prepend">
               <!-- <span class="input-group-text bg-secondary text-white" id="nonesense">Password</span> -->
             </div>
-            <input type="password" class="form-control password-output mt-4" placeholder="Enter Password" id='passwordsc'>
+            <input type="text" class="form-control password-output mt-4" placeholder="Enter Password" id='passwordsc'>
             
           </div>
           <!-- password strength output -->
@@ -73,6 +73,7 @@
             var password = $(this).val();
             
             if (password) {
+              if (password.length >= 8){
                 $.ajax({
                     type: 'POST',
                     url: '{% url "checking" %}',
@@ -85,7 +86,9 @@
                     }
                 });
             } else {
-                $('#password_strength').empty();
+                $('#password_strength').text('must be 8 character long or more');
+            }}else{
+              $('#password_strength').empty()
             }
         });
     });

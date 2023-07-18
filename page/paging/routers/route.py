@@ -49,7 +49,7 @@ class routemodel:
     A router to control database operations on models in the page app.
     """
 
-    route_models = {"user", "dat", "meaw"}
+    route_models = {"user", "passwords"}
 
     def db_for_read(self, model, **hints):
         """
