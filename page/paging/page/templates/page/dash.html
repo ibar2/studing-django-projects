@@ -42,7 +42,7 @@
   </head>
   <body>
   <div class='contain'>
-  <button type='button' class='btn'>Add a password</button>
+  <a href = {% url 'addpass' %} style='text-decoration:none;'><button type='button' class='btn'>Add a password</button></a>
   <input type='search' placeholder='search'  class='input'>
   
   <div style="overflow-x:auto;">
@@ -52,30 +52,13 @@
         <th>Password</th>
       
       </tr>
+      {% for i in pass %}
       <tr>
-        <td>Jill</td>
-        <td>Smith</td>
-  
+        <td>{{i.name}}</td>
+        <td>{{i.passwd}}</td>
       </tr>
-      <tr>
-        <td>Eve</td>
-        <td>Jackson</td>
-  
-      </tr>
-      <tr>
-        <td>Adam</td>
-        <td>Johnson</td>
-  
-      </tr>
+        {% endfor %}
     </table>
   </div>
   </div>
-
-  <script>
-    function disableSearchSuggestions() {
-      var input = document.getElementsByClassName("input");
-      input.setAttribute("autocomplete", "off");
-    }
-    window.onload = disableSearchSuggestions;
-    </script>
 {% endblock content %}

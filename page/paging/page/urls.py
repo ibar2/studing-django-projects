@@ -11,5 +11,6 @@ urlpatterns = [
     path('generate/', views.passwd, name='generate'),
     path('strength-checker/', views.strengthchecker, name='checker'),
     path('checking/', views.cheking, name='checking'),
-    path('dash/', views.dashboard, name='dashboard')
+    path('dash/', views.dashboard, name='dashboard'),
+    path('addpass/', views.addpass, name='addpass')
 ]

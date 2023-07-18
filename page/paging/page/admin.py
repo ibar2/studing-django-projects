@@ -13,6 +13,5 @@ class Custom(UserAdmin):
     list_display = ['username', 'is_active']
 
 
-admin.site.register(models.dat)
 admin.site.register(models.User, Custom)
-admin.site.register(models.meaw)
+

@@ -8,13 +8,8 @@ class User(AbstractUser):
         return self.username
 
 
-class dat(models.Model):
-    data = models.TextField()
-    comment = models.CharField(max_length=55, null=True, blank=True)
-
-    def __str__(self) -> str:
-        return self.data
-
-
-class meaw(models.Model):
-    cl = models.CharField(max_length=44, blank=True, null=True)
+class passwords(models.Model):
+    owner = models.IntegerField()
+    name = models.CharField(max_length=55)
+    passwd = models.CharField(max_length=200, default=None)
+    created_at = models.DateField(auto_now=True)

@@ -28326,3 +28326,39 @@ Watching for file changes with StatReloader
 "GET /dash/ HTTP/1.1" 200 3412
 "GET /dash/ HTTP/1.1" 200 3409
 "GET /dash/ HTTP/1.1" 200 3409
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /dash/ HTTP/1.1" 200 4508
+"GET /dash/ HTTP/1.1" 200 4508
+"GET /dash/ HTTP/1.1" 200 4508
+"GET /dash/ HTTP/1.1" 200 4508
+"GET /dash/ HTTP/1.1" 200 4508
+"GET /dash/ HTTP/1.1" 200 4508
+"GET /dash/ HTTP/1.1" 200 6636
+"GET /dash/ HTTP/1.1" 200 6636
+"GET / HTTP/1.1" 200 2610
+"GET / HTTP/1.1" 200 2610
+"GET / HTTP/1.1" 200 2610
+"GET / HTTP/1.1" 200 2610
+"GET /dash/ HTTP/1.1" 200 3409
+"GET /dash/ HTTP/1.1" 200 3409
+"GET /dash/ HTTP/1.1" 200 3409
+"GET /dash/ HTTP/1.1" 200 3409
+"GET /dash/ HTTP/1.1" 200 3180
+"GET /dash/ HTTP/1.1" 200 3180
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\page\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2031
+"GET / HTTP/1.1" 200 2031
+"GET / HTTP/1.1" 200 2031
+"GET / HTTP/1.1" 200 2031
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\paging\settings\base.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\paging\settings\base.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2031
+"GET / HTTP/1.1" 200 2031
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\paging\settings\base.py changed, reloading.
+C:\Users\Zakarie\Desktop\dj_rest\test\page\paging\paging\settings\base.py changed, reloading.
